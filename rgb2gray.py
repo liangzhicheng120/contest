@@ -13,7 +13,7 @@ def saveImage(image_final,i):
 
 #二值化
 def binaryzation(image_gray):
-    image_gray  = image_gray.resize((120,40),image.ANTIALIAS)
+    image_gray  = image_gray.resize((180,60),image.ANTIALIAS)
     image_array = np.array(image_gray)
     image_array = (image_array/255.0)*(image_array/255.0)
     #image_array = 1-np.rint(image_array) 
